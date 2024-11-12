@@ -10,7 +10,7 @@ import { userProvidedServiceInstanceEntityType } from '../../../../../../cf-enti
   templateUrl: './table-cell-last-service-binding.component.html',
   styleUrls: ['./table-cell-last-service-binding.component.scss']
 })
-export class TableCellServiceLastServiceBindingComponent extends TableCellCustom<APIResource<IServiceInstance>> implements OnInit {
+export class TableCellLastServiceBindingComponent extends TableCellCustom<APIResource<IServiceInstance>> implements OnInit {
   // tslint:disable-next-line:ban-types
   isUserProvidedServiceInstance: Boolean;
 

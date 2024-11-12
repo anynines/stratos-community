@@ -6,16 +6,16 @@ import {
 import { BaseTestModulesNoShared } from '../../../../../../../../core/test-framework/core-test.helper';
 import { EntityMonitorFactory } from '../../../../../../../../store/src/monitors/entity-monitor.factory.service';
 import { ServiceInstanceLastOpComponent } from '../../../../service-instance-last-op/service-instance-last-op.component';
-import { TableCellServiceLastServiceBindingComponent } from './table-cell-last-service-binding.component';
+import { TableCellLastServiceBindingComponent } from './table-cell-last-service-binding.component';
 
-describe('TableCellServiceLastServiceBindingComponent', () => {
-  let component: TableCellServiceLastServiceBindingComponent;
-  let fixture: ComponentFixture<TableCellServiceLastServiceBindingComponent>;
+describe('TableCellLastServiceBindingComponent', () => {
+  let component: TableCellLastServiceBindingComponent
+  let fixture: ComponentFixture<TableCellLastServiceBindingComponent>;
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [
-        TableCellServiceLastServiceBindingComponent,
+        TableCellLastServiceBindingComponent,
         ServiceInstanceLastOpComponent,
         BooleanIndicatorComponent
       ],
@@ -26,7 +26,7 @@ describe('TableCellServiceLastServiceBindingComponent', () => {
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(TableCellServiceLastServiceBindingComponent);
+    fixture = TestBed.createComponent(TableCellLastServiceBindingComponent);
     component = fixture.componentInstance;
     component.row = {
       entity: {

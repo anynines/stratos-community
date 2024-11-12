@@ -39,7 +39,7 @@ import {
   TableCellServiceLastOpComponent,
 } from '../cf-spaces-service-instances/table-cell-service-last-op/table-cell-service-last-op.component';
 import { TableCellServiceComponent } from '../cf-spaces-service-instances/table-cell-service/table-cell-service.component';
-import { TableCellServiceLastServiceBindingComponent } from '../cf-spaces-service-instances/table-cell-last-service-binding/table-cell-last-service-binding.component';
+import { TableCellLastServiceBindingComponent } from '../cf-spaces-service-instances/table-cell-last-service-binding/table-cell-last-service-binding.component';
 
 interface CanCache {
   [spaceGuid: string]: Observable<boolean>;
@@ -90,7 +90,7 @@ export class CfServiceInstancesListConfigBase implements IListConfig<APIResource
     {
       columnId: 'lastServiceBinding',
       headerCell: () => 'Last Service Binding',
-      cellComponent: TableCellServiceLastServiceBindingComponent,
+      cellComponent: TableCellLastServiceBindingComponent,
       cellFlex: '2'
     },
     {

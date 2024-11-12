@@ -203,14 +203,14 @@ import { AppNameUniqueDirective } from './directives/app-name-unique.directive/a
 import { CfUserPermissionDirective } from './directives/cf-user-permission/cf-user-permission.directive';
 import { ApplicationStateService } from './services/application-state.service';
 import { CloudFoundryUserProvidedServicesService } from './services/cloud-foundry-user-provided-services.service';
-import { TableCellServiceLastServiceBindingComponent } from './components/list/list-types/cf-spaces-service-instances/table-cell-last-service-binding/table-cell-last-service-binding.component';
+import { TableCellLastServiceBindingComponent } from './components/list/list-types/cf-spaces-service-instances/table-cell-last-service-binding/table-cell-last-service-binding.component';
 import { ServiceInstanceLastServiceBindingComponent } from './components/service-instance-last-service-binding/service-instance-last-service-binding.component';
 
 const cfListTableCells: Type<TableCellCustom<any>>[] = [
   TableCellServiceInstanceAppsAttachedComponent,
   TableCellServiceComponent,
   TableCellServiceLastOpComponent,
-  TableCellServiceLastServiceBindingComponent,
+  TableCellLastServiceBindingComponent,
   TableCellRouteAppsAttachedComponent,
   CfOrgPermissionCellComponent,
   CfSpacePermissionCellComponent,
