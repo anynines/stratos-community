@@ -5,7 +5,7 @@ import {
 } from '../../../../../../../../core/src/shared/components/boolean-indicator/boolean-indicator.component';
 import { BaseTestModulesNoShared } from '../../../../../../../../core/test-framework/core-test.helper';
 import { EntityMonitorFactory } from '../../../../../../../../store/src/monitors/entity-monitor.factory.service';
-import { ServiceInstanceLastOpComponent } from '../../../../service-instance-last-op/service-instance-last-op.component';
+import { ServiceInstanceLastServiceBindingComponent } from '../../../../service-instance-last-service-binding/service-instance-last-service-binding.component';
 import { TableCellLastServiceBindingComponent } from './table-cell-last-service-binding.component';
 
 describe('TableCellLastServiceBindingComponent', () => {
@@ -16,7 +16,7 @@ describe('TableCellLastServiceBindingComponent', () => {
     TestBed.configureTestingModule({
       declarations: [
         TableCellLastServiceBindingComponent,
-        ServiceInstanceLastOpComponent,
+        ServiceInstanceLastServiceBindingComponent,
         BooleanIndicatorComponent
       ],
       imports: [...BaseTestModulesNoShared],
