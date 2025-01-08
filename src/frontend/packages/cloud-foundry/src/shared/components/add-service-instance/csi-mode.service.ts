@@ -50,7 +50,10 @@ const defaultViewDetail = {
   showSelectCf: true,
   showSelectService: true,
   showSelectServicePlan: true,
-  showBindApp: true,
+  // disable binding by default -> if services are created asyncronously it breaks the user experience
+  // its assumed being asynchronously by default:
+  // https://github.com/cloudfoundry-community/stratos/blob/develop/src/frontend/packages/cloud-foundry/src/actions/service-instances.actions.ts#L150
+  showBindApp: false,
   showSpecifyDetails: true
 };
 

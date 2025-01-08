@@ -153,4 +153,11 @@ describe('AddServiceInstanceComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it("should not render bind services in the wizard by default", () => {
+    expect(
+      fixture.debugElement.query(By.css(".steppers__headers")).nativeElement
+        .textContent
+    ).not.toContain("Bind App");
+  });
 });
