@@ -144,6 +144,10 @@ export class AddServiceInstanceComponent implements OnDestroy, AfterContentInit 
       publishReplay(1),
       refCount(),
     );
+
+    // Invoke the observable - required -> otherwise the pipe above won't trigger
+    this.apps$.subscribe()
+
     this.skipApps$ = this.apps$.pipe(
       map(apps => apps.length === 0),
       publishReplay(1),
