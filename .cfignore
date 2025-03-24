@@ -25,3 +25,4 @@ e2e-reports/
 website/
 .helm-cache/
 coverage/
+.angular
