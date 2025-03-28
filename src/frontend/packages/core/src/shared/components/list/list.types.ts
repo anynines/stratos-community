@@ -1,9 +1,8 @@
-import { Component, Directive, Input } from '@angular/core';
+import { Component } from '@angular/core';
 import { Observable } from 'rxjs';
 
 import { IListDataSource, RowState } from './data-sources-controllers/list-data-source-types';
 
-@Directive()
 export abstract class TableCellCustom<T, C = any> {
   protected pDataSource: IListDataSource<T>;
   set dataSource(dataSource: IListDataSource<T>) {
@@ -14,7 +13,6 @@ export abstract class TableCellCustom<T, C = any> {
   }
 
   protected pRow: T;
-  @Input()
   get row(): T {
     return this.pRow;
   }
